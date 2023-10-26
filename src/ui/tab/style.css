@@ -1,0 +1,29 @@
+.tab {
+  border: none;
+  padding: 0.8rem 1.6rem;
+  font-size: 1.5rem;
+  flex: 1;
+  cursor: pointer;
+}
+
+.tab:focus {
+  outline: none;
+}
+
+.tab:focus-visible {
+  outline: solid 4px black;
+  outline-offset: 4px;
+}
+
+.tab[aria-selected="true"] {
+  background-color: black;
+  color: white;
+}
+
+.tabpanel {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+}
